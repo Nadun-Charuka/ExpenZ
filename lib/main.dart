@@ -9,6 +9,23 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp();
+    return MaterialApp(
+      title: "Expenz",
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        fontFamily: "Inter",
+      ),
+      home: const Scaffold(
+        body: Center(
+          child: Text(
+            "Hello",
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.w400,
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
